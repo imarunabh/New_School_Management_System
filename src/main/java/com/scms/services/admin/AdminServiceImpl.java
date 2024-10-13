@@ -35,7 +35,7 @@ public class AdminServiceImpl implements AdminService{
 	@PostConstruct
 	public void createAdmin() {
 		User user= new User();
-		user.setEmail("admin@test.com");
+		user.setEmail("admin@test1.com");
 		user.setPassword(new BCryptPasswordEncoder().encode("admin"));
 		user.setRole(UserRole.ADMIN);
 		userRepository.save(user);
@@ -43,7 +43,7 @@ public class AdminServiceImpl implements AdminService{
 		Admin admin = new Admin();
 		admin.setAddress("AdminAddress");
 		admin.setBloodGroup("A+");
-		admin.setEmail("admin@test.com");
+		admin.setEmail("admin@test1.com");
 		admin.setName("Admin");
 		admin.setPassword(new BCryptPasswordEncoder().encode("admin"));
 		admin.setPost_School("Admin");
