@@ -32,7 +32,7 @@ public class AdminServiceImpl implements AdminService{
 	@Autowired
 	private StudentRepository studentRepository;
 	
-//	@PostConstruct
+	@PostConstruct
 	public void createAdmin() {
 		User user= new User();
 		user.setEmail("admin@test.com");
