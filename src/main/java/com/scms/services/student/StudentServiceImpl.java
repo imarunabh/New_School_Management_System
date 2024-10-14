@@ -25,7 +25,7 @@ public class StudentServiceImpl implements StudentService{
 	@Autowired
 	private UserRepository userRepository;
 	
-	@PostConstruct
+//	@PostConstruct
 	public void createStudent() {
 		User user = new User();
 		user.setEmail("student@test.com");
