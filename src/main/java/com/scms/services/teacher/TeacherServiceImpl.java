@@ -25,7 +25,7 @@ public class TeacherServiceImpl implements TeacherService{
 	@Autowired
 	private TeacherRepository teacherRepository;
 	
-//	@PostConstruct
+	@PostConstruct
 	public void createStudent() {
 		User user = new User();
 		user.setEmail("teacher@test.com");

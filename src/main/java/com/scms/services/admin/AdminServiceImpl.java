@@ -32,10 +32,10 @@ public class AdminServiceImpl implements AdminService{
 	@Autowired
 	private StudentRepository studentRepository;
 	
-//	@PostConstruct
+	@PostConstruct
 	public void createAdmin() {
 		User user= new User();
-		user.setEmail("admin@test1.com");
+		user.setEmail("admin@test.com");
 		user.setPassword(new BCryptPasswordEncoder().encode("admin"));
 		user.setRole(UserRole.ADMIN);
 		userRepository.save(user);
